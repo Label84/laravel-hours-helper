@@ -6,7 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/label84/laravel-hours-helper.svg?style=flat-square)](https://packagist.org/packages/label84/laravel-hours-helper)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/label84/laravel-hours-helper/run-tests?label=Tests&style=flat-square)
 
-With ``laravel-hours-helper`` you can create a collection of dates and/of times with a specific interval (in minutes) for a specific period. You can also exclude multiple dates/times from the collection.
+With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`` of dates and/or times with a specific interval for a specific period. This helper could be useful in generating dropdown selections for a calendar meeting invite or scheduling the duration of an event. This helper also allows you to define the date formatting for each interval and to exclude intervals within the specific period.
 
 - [Requirements](#requirements)
 - [Laravel support](#laravel-support)
@@ -42,7 +42,7 @@ use Facades\Label84\HoursHelper\HoursHelper;
 
 $hours = HoursHelper::create('08:00', '09:30', 30);
 
-// collection result
+// Illuminate\Support\Collection
 0 => '08:00',
 1 => '08:30',
 2 => '09:00',
@@ -56,7 +56,7 @@ use Facades\Label84\HoursHelper\HoursHelper;
 
 $hours = HoursHelper::create('11:00', '13:00', 60, 'g:i A');
 
-// collection result
+// Illuminate\Support\Collection
 0 => '11:00 AM',
 1 => '12:00 PM',
 2 => '1:00 PM',
@@ -67,14 +67,15 @@ $hours = HoursHelper::create('11:00', '13:00', 60, 'g:i A');
 ```php
 use Facades\Label84\HoursHelper\HoursHelper;
 
-$hours = HoursHelper::create('08:00', '10:00', 60, 'H:i', [
+$hours = HoursHelper::create('08:00', '11:00', 60, 'H:i', [
     ['09:00', '09:59'],
     // more..
 ]);
 
-// collection result
+// Illuminate\Support\Collection
 0 => '08:00',
 1 => '10:00',
+2 => '11:00',
 ```
 
 ### Example 3: past midnight
@@ -84,7 +85,7 @@ use Facades\Label84\HoursHelper\HoursHelper;
 
 $hours = HoursHelper::create('23:00', '01:00', 60);
 
-// collection result
+// Illuminate\Support\Collection
 0 => '23:00',
 1 => '00:00',
 2 => '01:00',
@@ -95,7 +96,7 @@ $hours = HoursHelper::create('23:00', '01:00', 60);
 ```php
 $hours = HoursHelper::create('2022-01-01 08:00', '2022-01-01 08:30', 15, 'Y-m-d H:i');
 
-// collection result
+// Illuminate\Support\Collection
 0 => '2022-01-01 08:00',
 1 => '2022-01-01 08:15',
 2 => '2022-01-01 08:30',
