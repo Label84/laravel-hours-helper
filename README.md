@@ -33,12 +33,10 @@ Install the package via composer:
 composer require label84/laravel-hours-helper
 ```
 
-:memo: Prepend the import with ``Facades\`` to the make use of the real-time Facade.
-
 ## Usage
 
 ```php
-use Facades\Label84\HoursHelper\HoursHelper;
+use Label84\HoursHelper\Facades\HoursHelper;
 
 $hours = HoursHelper::create('08:00', '09:30', 30);
 
@@ -52,7 +50,7 @@ $hours = HoursHelper::create('08:00', '09:30', 30);
 ### Example 1: time format
 
 ```php
-use Facades\Label84\HoursHelper\HoursHelper;
+use Label84\HoursHelper\Facades\HoursHelper;
 
 $hours = HoursHelper::create('11:00', '13:00', 60, 'g:i A');
 
@@ -65,7 +63,7 @@ $hours = HoursHelper::create('11:00', '13:00', 60, 'g:i A');
 ### Example 2: exclude times
 
 ```php
-use Facades\Label84\HoursHelper\HoursHelper;
+use Label84\HoursHelper\Facades\HoursHelper;
 
 $hours = HoursHelper::create('08:00', '11:00', 60, 'H:i', [
     ['09:00', '09:59'],
@@ -81,7 +79,7 @@ $hours = HoursHelper::create('08:00', '11:00', 60, 'H:i', [
 ### Example 3: past midnight
 
 ```php
-use Facades\Label84\HoursHelper\HoursHelper;
+use Label84\HoursHelper\Facades\HoursHelper;
 
 $hours = HoursHelper::create('23:00', '01:00', 60);
 
@@ -94,6 +92,8 @@ $hours = HoursHelper::create('23:00', '01:00', 60);
 ### Example 4: multiple days
 
 ```php
+use Label84\HoursHelper\Facades\HoursHelper;
+
 $hours = HoursHelper::create('2022-01-01 08:00', '2022-01-01 08:30', 15, 'Y-m-d H:i');
 
 // Illuminate\Support\Collection

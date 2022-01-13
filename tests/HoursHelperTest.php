@@ -3,8 +3,8 @@
 namespace Label84\HoursHelper\Tests;
 
 use Carbon\Carbon;
-use Facades\Label84\HoursHelper\HoursHelper;
 use Illuminate\Support\Collection;
+use Label84\HoursHelper\Facades\HoursHelper;
 
 class HoursHelperTest extends TestCase
 {
