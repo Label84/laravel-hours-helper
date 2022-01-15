@@ -17,12 +17,13 @@ With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`
 
 ## Requirements
 
-- Laravel 8.x
+- Laravel 8.x or 9.x
 
 ## Laravel support
 
 | Version | Release |
 |---------|---------|
+| 9.x     | 1.2     |
 | 8.x     | 1.0     |
 
 ## Installation
