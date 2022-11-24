@@ -41,7 +41,7 @@ class HoursHelper
 
                 return false;
             })
-            ->map(fn (Carbon $carbon) => $carbon->format($format))
+            ->map->format($format)
             ->values();
     }
 }
