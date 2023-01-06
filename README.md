@@ -4,7 +4,7 @@
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Quality Score](https://img.shields.io/scrutinizer/g/label84/laravel-hours-helper.svg?style=flat-square)](https://scrutinizer-ci.com/g/label84/laravel-hours-helper)
 [![Total Downloads](https://img.shields.io/packagist/dt/label84/laravel-hours-helper.svg?style=flat-square)](https://packagist.org/packages/label84/laravel-hours-helper)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/label84/laravel-hours-helper/run-tests?label=Tests&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/label84/laravel-hours-helper/run-tests.yml?branch=master&style=flat-square)
 
 With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`` of dates and/or times with a specific interval for a specific period. This helper could be useful in generating dropdown selections for a calendar meeting invite or scheduling the duration of an event. This helper also allows you to define the date formatting for each interval and to exclude intervals within the specific period.
 
