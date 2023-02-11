@@ -31,6 +31,7 @@ class HoursHelper
 
         $period = CarbonInterval::minutes($interval)->toPeriod($start, $end);
 
+        /** @phpstan-ignore-next-line */
         return collect($period)
             ->reject(function (Carbon $carbon) use ($excludes) {
                 foreach ($excludes as $exclude) {
