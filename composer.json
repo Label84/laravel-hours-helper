@@ -6,12 +6,12 @@
     "authors": [
       {
         "name": "Label84",
-        "email": "info@tjardo.com"
+        "email": "info@label84.com"
       }
-    ],    
+    ],
     "require": {
-      "php": "^7.4 || ^8.0",
-      "illuminate/support": "^8.0|^9.0"
+      "php": "^8.0",
+      "illuminate/support": "^9.0|^10.0"
     },
     "autoload": {
       "psr-4": {
@@ -22,7 +22,7 @@
       "psr-4": {
           "Label84\\HoursHelper\\Tests\\": "tests"
       }
-    }, 
+    },
     "extra": {
       "laravel": {
           "providers": [
@@ -34,8 +34,8 @@
       }
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0|^7.0",
-        "nunomaduro/larastan": "^1.0",
+        "orchestra/testbench": "^7.0|^8.0",
+        "nunomaduro/larastan": "^2.0",
         "phpunit/phpunit": "^9.5"
     },
     "minimum-stability": "dev",

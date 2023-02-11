@@ -8,23 +8,18 @@
 
 With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`` of dates and/or times with a specific interval for a specific period. This helper could be useful in generating dropdown selections for a calendar meeting invite or scheduling the duration of an event. This helper also allows you to define the date formatting for each interval and to exclude intervals within the specific period.
 
-- [Requirements](#requirements)
-- [Laravel support](#laravel-support)
+- [Laravel Support](#laravel-support)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
 - [License](#license)
 
-## Requirements
-
-- Laravel 8.x or 9.x
-
-## Laravel support
+## Laravel Support
 
 | Version | Release |
 |---------|---------|
+| 10.x    | 1.2     |
 | 9.x     | 1.2     |
-| 8.x     | 1.0     |
 
 ## Installation
 
