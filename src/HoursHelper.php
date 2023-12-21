@@ -35,7 +35,19 @@ class HoursHelper
         return collect($period)
             ->reject(function (Carbon $carbon) use ($excludes) {
                 foreach ($excludes as $exclude) {
-                    if ($carbon->between(Carbon::parse($exclude[0]), Carbon::parse($exclude[1]))) {
+                    $start = Carbon::parse($exclude[0]);
+                    $end = Carbon::parse($exclude[1]);
+
+                    if($start->gt($end)) {
+                        $end->addDay();
+                    }
+
+                    if($start->isToday() && $end->isToday() && $carbon->isTomorrow()) {
+                        $start->addDay();
+                        $end->addDay();
+                    }
+
+                    if ($carbon->between($start, $end)) {
                         return true;
                     }
                 }
