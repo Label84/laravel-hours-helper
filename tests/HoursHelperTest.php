@@ -198,11 +198,11 @@ class HoursHelperTest extends TestCase
         ]);
 
         $collection = new Collection([
-           '23:00',
-           '23:15',
-           '23:30',
-           '00:15',
-           '00:30',
+            '23:00',
+            '23:15',
+            '23:30',
+            '00:15',
+            '00:30',
         ]);
 
         $this->assertEquals($collection, $result);
