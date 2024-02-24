@@ -2,7 +2,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/label84/laravel-hours-helper/v/stable?style=flat-square)](https://packagist.org/packages/label84/laravel-hours-helper)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Quality Score](https://img.shields.io/scrutinizer/g/label84/laravel-hours-helper.svg?style=flat-square)](https://scrutinizer-ci.com/g/label84/laravel-hours-helper)
 [![Total Downloads](https://img.shields.io/packagist/dt/label84/laravel-hours-helper.svg?style=flat-square)](https://packagist.org/packages/label84/laravel-hours-helper)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/label84/laravel-hours-helper/run-tests.yml?branch=master&style=flat-square)
 
@@ -18,6 +17,7 @@ With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`
 
 | Version | Release |
 |---------|---------|
+| 11.x    | 1.2     |
 | 10.x    | 1.2     |
 | 9.x     | 1.2     |
 

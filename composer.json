@@ -11,7 +11,7 @@
     ],
     "require": {
       "php": "^8.0",
-      "illuminate/support": "^9.0|^10.0"
+      "illuminate/support": "^9.0|^10.0|^11.0"
     },
     "autoload": {
       "psr-4": {
@@ -34,9 +34,10 @@
       }
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0|^8.0",
-        "nunomaduro/larastan": "^2.0",
-        "phpunit/phpunit": "^9.5"
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "larastan/larastan": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "laravel/pint": "^1.14"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

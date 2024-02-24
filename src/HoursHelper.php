@@ -11,13 +11,8 @@ class HoursHelper
     /**
      * Create a Collection of times with a given interval for a given period.
      *
-     * @param Carbon|string $start
-     * @param Carbon|string $end
-     * @param int           $interval
-     * @param string        $format
-     * @param array         $excludes
-     *
-     * @return Collection
+     * @param  Carbon|string  $start
+     * @param  Carbon|string  $end
      */
     public function create($start, $end, int $interval, string $format = 'H:i', array $excludes = []): Collection
     {
@@ -38,11 +33,11 @@ class HoursHelper
                     $start = Carbon::parse($exclude[0]);
                     $end = Carbon::parse($exclude[1]);
 
-                    if($start->gt($end)) {
+                    if ($start->gt($end)) {
                         $end->addDay();
                     }
 
-                    if($start->isToday() && $end->isToday() && $carbon->isTomorrow()) {
+                    if ($start->isToday() && $end->isToday() && $carbon->isTomorrow()) {
                         $start->addDay();
                         $end->addDay();
                     }
