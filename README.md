@@ -17,9 +17,9 @@ With ``laravel-hours-helper`` you can create an ``Illuminate\Support\Collection`
 
 | Version | Release |
 |---------|---------|
-| 11.x    | 1.2     |
-| 10.x    | 1.2     |
-| 9.x     | 1.2     |
+| 11.x    | ^1.3    |
+| 10.x    | ^1.3    |
+| 9.x     | ^1.3    |
 
 ## Installation
 
