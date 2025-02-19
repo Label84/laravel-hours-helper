@@ -51,7 +51,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          if [ "${{ matrix.larastan }}" = "true" ]; then
+          if [ "${{ matrix.larastan }}" == "true" ]; then
             composer require "larastan/larastan" --dev --no-interaction --no-update
           fi
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
