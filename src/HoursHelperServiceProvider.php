@@ -9,7 +9,7 @@ class HoursHelperServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(HoursHelper::class, function ($app) {
-            return new HoursHelper();
+            return new HoursHelper;
         });
     }
 
