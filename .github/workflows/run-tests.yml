@@ -13,21 +13,21 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     strategy:
-    fail-fast: false
-    matrix:
-      include:
-        - php: 8.2
-          laravel: '11.*'
-          testbench: '9.*'
-          larastan: true
-          dependency-version: prefer-stable
-          os: ubuntu-latest
-        - php: 8.2
-          laravel: '12.*'
-          testbench: '10.*'
-          larastan: false
-          dependency-version: prefer-stable
-          os: ubuntu-latest
+      fail-fast: false
+      matrix:
+        include:
+          - php: 8.2
+            laravel: '11.*'
+            testbench: '9.*'
+            larastan: true
+            dependency-version: prefer-stable
+            os: ubuntu-latest
+          - php: 8.2
+            laravel: '12.*'
+            testbench: '10.*'
+            larastan: false
+            dependency-version: prefer-stable
+            os: ubuntu-latest
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 
