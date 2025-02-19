@@ -9,8 +9,5 @@ parameters:
     level: 8
 
     ignoreErrors:
-
-    excludes_analyse:
-
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
+        - identifier: missingType.iterableValue
+        - identifier: missingType.generics

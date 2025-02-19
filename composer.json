@@ -4,40 +4,40 @@
     "type": "library",
     "license": "MIT",
     "authors": [
-      {
-        "name": "Label84",
-        "email": "info@label84.com"
-      }
+        {
+            "name": "Label84",
+            "email": "info@label84.com"
+        }
     ],
     "require": {
-      "php": "^8.0",
-      "illuminate/support": "^9.0|^10.0|^11.0"
+        "php": "^8.1",
+        "illuminate/support": "^11.0|^12.0"
     },
     "autoload": {
-      "psr-4": {
-          "Label84\\HoursHelper\\": "src"
-      }
+        "psr-4": {
+            "Label84\\HoursHelper\\": "src"
+        }
     },
     "autoload-dev": {
-      "psr-4": {
-          "Label84\\HoursHelper\\Tests\\": "tests"
-      }
+        "psr-4": {
+            "Label84\\HoursHelper\\Tests\\": "tests"
+        }
     },
     "extra": {
-      "laravel": {
-          "providers": [
-              "Label84\\HoursHelper\\HoursHelperServiceProvider"
-          ],
-          "aliases": {
-            "HoursHelper": "Label84\\HoursHelper\\Facades\\HoursHelper"
-          }
-      }
+        "laravel": {
+            "providers": [
+                "Label84\\HoursHelper\\HoursHelperServiceProvider"
+            ],
+            "aliases": {
+                "HoursHelper": "Label84\\HoursHelper\\Facades\\HoursHelper"
+            }
+        }
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0|^8.0|^9.0",
-        "larastan/larastan": "^2.0",
-        "phpunit/phpunit": "^9.5|^10.5",
-        "laravel/pint": "^1.14"
+        "orchestra/testbench": "^9.0|^10.0",
+        "larastan/larastan": "^3.0",
+        "phpunit/phpunit": "^11.5",
+        "laravel/pint": "^1.21"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
