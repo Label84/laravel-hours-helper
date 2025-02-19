@@ -34,7 +34,7 @@
         }
     },
     "require-dev": {
-        "orchestra/testbench": "^10.0|^11.0",
+        "orchestra/testbench": "^9.0|^10.0",
         "larastan/larastan": "^3.0",
         "phpunit/phpunit": "^11.5|^12",
         "laravel/pint": "^1.21"
