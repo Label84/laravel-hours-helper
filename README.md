@@ -102,6 +102,7 @@ You can find more examples in the test directory: [tests/HoursHelperTest.php](te
 ## Tests
 
 ```sh
+./vendor/bin/pint
 ./vendor/bin/phpstan analyze
 ./vendor/bin/phpunit
 ```
